@@ -1,38 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-*{
-    box-sizing: border-box;  
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-body{
+
+body {
     padding: 50px;
 }
-.container{
+
+.container {
     display: grid;
     grid-template-columns: 70% 30%;
 }
-.item{
+
+.item {
     margin: 0 5px;
 }
-.social{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: end;
-    justify-content: center;
 
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
 }
-.social p,.social a{
+
+.social p,
+.social a {
     font-size: 20px;
     color: #102c67;
     font-weight: 500;
     text-decoration: none;
-
 }
-.name{
+
+.name {
     font-size: 45px;
     margin-bottom: 10px;
     font-weight: 600;
@@ -40,85 +43,131 @@ body{
     text-transform: uppercase;
 }
 
-.headerLabel{
+.headerLabel {
     font-size: 20px;
     font-weight: 600;
     color: #102c67;
     text-transform: uppercase;
 }
-p{
+
+p {
     font-size: 14px;
     font-weight: 400;
 }
-hr{
+
+hr {
     border: 0;
     border-bottom: 2px solid #102c67;
     margin: 10px 0;
 }
-.hr2{
+
+.hr2 {
     border: 0;
     border-bottom: 2px solid #3c87f768;
     margin: 10px 0;
 }
-.chipContainer{
+
+.chipContainer {
     display: flex;
     flex-direction: row;
     gap: 15px;
     flex-wrap: wrap;
 }
-.chipContainer a{
+
+.chipContainer a {
     text-decoration: none;
     cursor: pointer;
 }
-.chip{
+
+.chip {
     font-size: 15px;
     font-weight: 400;
-    background-color: #7eacf131;
     border-radius: 7px;
     padding: 10px;
-    color: #102c67;
     width: fit-content;
     text-align: center;
 }
-.secondaryHeader{
+
+.blue {
+    background-color: #7eacf131;
+    color: #102c67;
+}
+
+.skymist {
+    background-color: #E9F5FF;
+    color: #0A4D8C;
+}
+
+.sunbeamSand {
+    background-color: #FFF6E5;
+    color: #8A5A00;
+}
+
+.mintMedow {
+    background-color: #E6F4EA;
+    color: #2B593E;
+}
+
+.lavenderCloud {
+    background-color: #F0EFFF;
+    color: #5A38A5;
+}
+
+.secondaryHeader {
     width: initial;
     font-weight: 500;
     text-align: left;
 }
-.round{
+
+.round {
     border-radius: 20px;
     padding: 10px 20px;
 }
-.chip2{
-   background-color: initial;
-   padding: 0;
-   min-width: 150px;
-   text-align: left;
-   text-transform: capitalize;
+
+.chip2 {
+    background-color: initial;
+    padding: 0;
+    min-width: 150px;
+    text-align: left;
+    text-transform: capitalize;
 }
-.chip2 i{
+
+.chip2 i {
     margin-right: 5px;
 }
+.careerTimeline{
+    margin-bottom: 9px;
+}
+.profileSummary p {
+    font-size: 16px;
+    margin: 10px 0 20px;
+    line-height: 25px;
+}
 
-
-.profileSummary ul, .workExperience ul{
+.profileSummary ul,
+.workExperience ul {
     padding: 10px 20px;
 }
-.profileSummary ul li, .workExperience ul li{
+
+.profileSummary ul li,
+.workExperience ul li {
     font-size: 16px;
     margin-bottom: 10px;
     font-weight: 400;
     list-style: circle;
 }
-.workExperience p{
-    font-size: 16px;
+
+.workExperience p {
+    font-size: 15px;
     margin: 10px 0;
 }
-.companyHolder{
+
+.companyHolder {
     display: flex;
     align-items: center;
 }
-.company{
+
+.company {
     width: 250px;
     min-height: 130px;
     display: flex;
@@ -128,14 +177,22 @@ hr{
     text-align: center;
     padding: 10px 20px;
 }
-.company img{
+
+.company img {
     width: 100px;
     height: 50px;
     object-fit: contain;
 }
-.company h4{
-margin: 0 0 10px;
+
+.company h4 {
+    margin: 0 0 10px;
 }
-.projects{
+
+.projects {
     padding: 0 20px;
+}
+
+.projects h4 {
+    font-size: 18px;
+    color: #575757;
 }
