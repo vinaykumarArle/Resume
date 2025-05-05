@@ -29,14 +29,14 @@ body {
 
 .social p,
 .social a {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #102c67;
     font-weight: 500;
     text-decoration: none;
 }
 
 .name {
-    font-size: 45px;
+    font-size: 2.82rem;
     margin-bottom: 10px;
     font-weight: 600;
     color: #102c67;
@@ -44,14 +44,14 @@ body {
 }
 
 .headerLabel {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #102c67;
     text-transform: uppercase;
 }
 
 p {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
 }
 
@@ -80,7 +80,7 @@ hr {
 }
 
 .chip {
-    font-size: 15px;
+    font-size: 0.938rem;
     font-weight: 400;
     border-radius: 7px;
     padding: 10px;
@@ -135,11 +135,13 @@ hr {
 .chip2 i {
     margin-right: 5px;
 }
-.careerTimeline{
+
+.careerTimeline {
     margin-bottom: 9px;
 }
+
 .profileSummary p {
-    font-size: 16px;
+    font-size: 1rem;
     margin: 10px 0 20px;
     line-height: 25px;
 }
@@ -151,14 +153,14 @@ hr {
 
 .profileSummary ul li,
 .workExperience ul li {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 10px;
     font-weight: 400;
     list-style: circle;
 }
 
 .workExperience p {
-    font-size: 15px;
+    font-size: 0.938rem;
     margin: 10px 0;
 }
 
@@ -193,6 +195,119 @@ hr {
 }
 
 .projects h4 {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #575757;
+}
+
+@media screen and (max-width:900px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .item {
+        margin: 0;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .social p,
+    .social a {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body {
+        padding-bottom: 30px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .name {
+        font-size: 1.8rem;
+        margin-top: 5px;
+    }
+
+    .social p,
+    .social a {
+        font-size: 0.62rem;
+    }
+
+    .headerLabel {
+        font-size: 0.79rem;
+        margin-top: 15px;
+    }
+
+    .secondaryHeader {
+        font-size: 0.59rem;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .profileSummary p {
+        font-size: 0.6rem;
+        line-height: 16px;
+        margin: 0;
+    }
+
+    .projects {
+        padding: 0;
+    }
+
+    .projects h4 {
+        font-size: 0.65rem;
+    }
+
+    .projects p {
+        font-size: 0.6rem;
+    }
+
+    .profileSummary ul li,
+    .workExperience ul li {
+        font-size: 0.6rem;
+    }
+
+    .profileSummary ul li:last-child,
+    .workExperience ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .profileSummary ul,
+    .workExperience ul {
+        margin-left: 0 !important;
+    }
+
+    .companyHolder {
+        justify-content: space-between;
+    }
+
+    .company {
+        padding: 0;
+    }
+
+    .company h4 {
+        font-size: 0.7rem;
+    }
+
+    .company p {
+        font-size: 0.6rem;
+    }
+
+    .chipContainer {
+        gap: 10px;
+    }
+
+    .chip {
+        font-size: 0.6rem;
+        border-radius: 4px;
+        padding: 5px 7px;
+    }
 }
